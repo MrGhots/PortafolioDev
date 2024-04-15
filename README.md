@@ -9,18 +9,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 40px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
         }
         nav {
             display: flex;
             justify-content: center;
             background-color: #444;
-            padding: 10px;
+            padding: 10px 0;
         }
         nav a {
             color: #fff;
@@ -28,7 +32,50 @@
             padding: 10px 20px;
         }
         section {
-            padding: 20px;
+            padding: 40px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .profile-text {
+            max-width: 600px;
+            text-align: center;
+        }
+        .skills {
+            margin-bottom: 40px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .skills li {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #666;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .experience {
+            margin-bottom: 40px;
+        }
+        .experience h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .experience p {
+            text-align: justify;
+            line-height: 1.6;
         }
         .projects {
             display: flex;
@@ -42,6 +89,7 @@
             border-radius: 5px;
             padding: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
         .project img {
             width: 100%;
@@ -64,9 +112,44 @@
         <h1>Mi Portafolio</h1>
     </header>
     <nav>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
     </nav>
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="profile">
+            <img src="tu_foto.jpg" alt="Tu Foto">
+            <div class="profile-text">
+                <p>¡Hola! Soy [Tu Nombre], un apasionado programador con años de experiencia en el desarrollo web. Me encanta crear proyectos innovadores y aprender nuevas tecnologías. Estoy comprometido a proporcionar soluciones de alta calidad y mejorar constantemente mis habilidades.</p>
+            </div>
+        </div>
+    </section>
+    <section id="experiencia" class="experience">
+        <h2>Experiencia</h2>
+        <p>Tengo experiencia en:</p>
+        <ul>
+            <li>Desarrollo Frontend (HTML, CSS, JavaScript)</li>
+            <li>Desarrollo Backend (Node.js, Express)</li>
+            <li>Bases de Datos (SQL, MongoDB)</li>
+            <li>Frameworks y Librerías (React, Vue.js)</li>
+            <!-- Agregar más según sea necesario -->
+        </ul>
+    </section>
+    <section id="habilidades" class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Vue.js</li>
+            <!-- Agregar más según sea necesario -->
+        </ul>
+    </section>
     <section id="proyectos">
         <h2>Proyectos</h2>
         <div class="projects">
