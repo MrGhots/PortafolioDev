@@ -1,69 +1,100 @@
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Nicolás</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Nicolás</h1>
-            <h2>Programador Full Stack</h2>
-            <p>¡Bienvenido a mi portafolio!</p>
-        </div>
+        <h1>Mi Portafolio</h1>
     </header>
-
-    <section id="experience">
-        <div class="container">
-            <h2>Experiencia</h2>
-            <p>Tengo 15 años y he estado programando desde los 12. He trabajado en varios proyectos personales y también he colaborado en proyectos de código abierto.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Lenguajes y Tecnologías</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Node.js</li>
-                <!-- Puedes agregar más lenguajes y tecnologías aquí -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Proyectos Destacados</h2>
+    <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects">
             <div class="project">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
                 <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
+                <p>Descripción del Proyecto 1</p>
             </div>
             <div class="project">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
                 <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
+                <p>Descripción del Proyecto 2</p>
             </div>
-            <!-- Agrega más proyectos aquí -->
+            <!-- Agregar más proyectos según sea necesario -->
         </div>
     </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>¡Si te gustaría colaborar en un proyecto o simplemente saludar, no dudes en contactarme!</p>
-            <p>Email: nicolas@example.com</p>
-        </div>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Ponte en contacto conmigo!</p>
+        <form id="contactForm">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
-
     <footer>
-        <div class="container">
-            <p>© 2024 Nicolás. Todos los derechos reservados.</p>
-        </div>
+        &copy; 2024 Mi Portafolio
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
