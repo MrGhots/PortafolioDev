@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -36,83 +36,44 @@
             margin: auto;
             max-width: 1200px;
         }
-        .profile {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 40px;
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .profile img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            margin-right: 20px;
-        }
-        .profile-text {
-            max-width: 600px;
-            text-align: center;
-        }
-        .skills {
-            margin-bottom: 40px;
-        }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .skills li {
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #666;
-            color: #fff;
-            border-radius: 20px;
-        }
-        .experience {
-            margin-bottom: 40px;
-        }
-        .experience h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .experience p {
-            text-align: justify;
-            line-height: 1.6;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .project {
-            width: 300px;
-            margin: 20px;
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
+            box-sizing: border-box;
         }
-        .project img {
-            width: 100%;
-            border-radius: 5px;
-            margin-bottom: 10px;
+        .contact-form textarea {
+            height: 100px;
         }
-        footer {
+        .contact-form button {
             background-color: #333;
             color: #fff;
-            text-align: center;
-            padding: 20px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        @media screen and (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-            }
-            .profile img {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .contact-form p.success-message {
+            color: green;
+            font-weight: bold;
+        }
+        .contact-form p.error-message {
+            color: red;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -127,63 +88,38 @@
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
     </nav>
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <div class="profile">
-            <img src="tu_foto.jpg" alt="Tu Foto">
-            <div class="profile-text">
-                <p>¡Hola! Soy [Tu Nombre], un apasionado programador con años de experiencia en el desarrollo web. Me encanta crear proyectos innovadores y aprender nuevas tecnologías. Estoy comprometido a proporcionar soluciones de alta calidad y mejorar constantemente mis habilidades.</p>
-            </div>
-        </div>
-    </section>
-    <section id="experiencia" class="experience">
-        <h2>Experiencia</h2>
-        <p>Tengo experiencia en:</p>
-        <ul>
-            <li>Desarrollo Frontend (HTML, CSS, JavaScript)</li>
-            <li>Desarrollo Backend (Node.js, Express)</li>
-            <li>Bases de Datos (SQL, MongoDB)</li>
-            <li>Frameworks y Librerías (React, Vue.js)</li>
-            <!-- Agregar más según sea necesario -->
-        </ul>
-    </section>
-    <section id="habilidades" class="skills">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>React</li>
-            <li>Vue.js</li>
-            <!-- Agregar más según sea necesario -->
-        </ul>
-    </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="proyecto1.jpg" alt="Proyecto 1">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del Proyecto 1</p>
-            </div>
-            <div class="project">
-                <img src="proyecto2.jpg" alt="Proyecto 2">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del Proyecto 2</p>
-            </div>
-            <!-- Agregar más proyectos según sea necesario -->
-        </div>
-    </section>
     <section id="contacto">
         <h2>Contacto</h2>
         <p>¡Ponte en contacto conmigo!</p>
-        <form id="contactForm">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo electrónico" required>
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="contact-form">
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $nombre = $_POST['nombre'];
+                $email = $_POST['email'];
+                $mensaje = $_POST['mensaje'];
+
+                $to = 'tudirecciondecorreo@example.com'; // Reemplaza con tu dirección de correo electrónico
+                $subject = 'Mensaje de contacto desde Mi Portafolio';
+                $message = "Nombre: $nombre\n";
+                $message .= "Correo electrónico: $email\n";
+                $message .= "Mensaje:\n$mensaje";
+
+                $headers = "From: $email";
+
+                if (mail($to, $subject, $message, $headers)) {
+                    echo '<p class="success-message">¡Mensaje enviado con éxito!</p>';
+                } else {
+                    echo '<p class="error-message">¡Error al enviar el mensaje!</p>';
+                }
+            }
+            ?>
+            <form id="contactForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
     <footer>
         &copy; 2024 Mi Portafolio
