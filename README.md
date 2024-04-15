@@ -33,6 +33,8 @@
         }
         section {
             padding: 40px;
+            margin: auto;
+            max-width: 1200px;
         }
         .profile {
             display: flex;
@@ -58,9 +60,10 @@
             padding: 0;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         .skills li {
-            margin: 0 10px;
+            margin: 10px;
             padding: 10px 20px;
             background-color: #666;
             color: #fff;
@@ -101,9 +104,15 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+            .profile img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
