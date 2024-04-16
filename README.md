@@ -119,20 +119,28 @@
         .social-icons a:hover {
             color: #666;
         }
-        @media screen and (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-            }
-            .profile img {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-        }
+      @media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
+    .profile img {
+        width: 150px; /* Ajustar el tamaño de la imagen según sea necesario */
+        margin-right: 0;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+    }
+    nav {
+        display: block; /* Cambiar a una lista vertical en dispositivos móviles */
+    }
+    .projects {
+        justify-content: center; /* Centrar los proyectos horizontalmente */
+    }
+}
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio</h1>
+        <h1>Nicolás Torres Molina</h1>
     </header>
     <nav>
         <a href="#sobre-mi">Sobre Mí</a>
@@ -146,7 +154,7 @@
         <div class="profile">
             <img src="tu_foto.jpg" alt="Tu Foto">
             <div class="profile-text">
-                <p>¡Hola! Soy [Tu Nombre], un apasionado programador con años de experiencia en el desarrollo web. Me encanta crear proyectos innovadores y aprender nuevas tecnologías. Estoy comprometido a proporcionar soluciones de alta calidad y mejorar constantemente mis habilidades.</p>
+            <p>¡Hola👋! Soy ,<strong>Nicolás</strong>strong> joven un apasionado por la programación con años de experiencia en el desarrollo web. Me encanta crear proyectos innovadores y aprender nuevas tecnologías. Estoy comprometido a proporcionar soluciones de alta calidad y mejorar constantemente mis habilidades.</p>
             </div>
         </div>
     </section>
@@ -155,7 +163,7 @@
         <p>Tengo experiencia en:</p>
         <ul>
             <li>Desarrollo Frontend (HTML, CSS, JavaScript)</li>
-            <li>Desarrollo Backend (Node.js, Express)</li>
+            <li>Desarrollo Backend (Python )</li>
             <li>Bases de Datos (SQL, MongoDB)</li>
             <li>Frameworks y Librerías (React, Vue.js)</li>
             <!-- Agregar más según sea necesario -->
@@ -167,9 +175,9 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>React</li>
-            <li>Vue.js</li>
+            <li>Python</li>
+            <li>Diseño Grafico</li>
+            <li>Comunicación</li>
             <!-- Agregar más según sea necesario -->
         </ul>
     </section>
@@ -178,13 +186,13 @@
         <div class="projects">
             <div class="project">
                 <img src="proyecto1.jpg" alt="Proyecto 1">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del Proyecto 1</p>
+                <h3>Login</h3>
+                <p>Login llamativo animado.</p>
             </div>
             <div class="project">
                 <img src="proyecto2.jpg" alt="Proyecto 2">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del Proyecto 2</p>
+                <h3>Calculadora</h3>
+                <p>Calculadora funcional estilo iOS</p>
             </div>
             <!-- Agregar más proyectos según sea necesario -->
         </div>
@@ -192,10 +200,10 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <div class="social-icons">
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="[https://www.instagram.com/](https://www.instagram.com/nico_tmrx_?igsh=MWs2eGtkNHZreHQ4ag%3D%3D&utm_source=qr)"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:tuemail@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="[https://wa.me](https://wa.me/3125534086"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:torresmolinanicolas838@gmail.com.com"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
     <footer>
