@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio Nicolas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
@@ -119,7 +119,10 @@
         .social-icons a:hover {
             color: #666;
         }
-      @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+    section {
+        padding: 40px 20px; /* Reducir el padding horizontal para dar más espacio al contenido */
+    }
     .profile {
         flex-direction: column;
     }
@@ -134,7 +137,11 @@
     .projects {
         justify-content: center; /* Centrar los proyectos horizontalmente */
     }
+    section, .profile, .experience, .skills, .projects, .social-icons {
+        max-width: 100%; /* Ajustar el ancho máximo al 100% en dispositivos móviles */
+    }
 }
+
 
     </style>
 </head>
