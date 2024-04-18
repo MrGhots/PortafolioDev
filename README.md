@@ -244,13 +244,13 @@
                 max-width: 100%; /* Ajustar el ancho máximo al 100% en dispositivos móviles */
             }
                @font-face {
-            font-family: 'ShadowHand';
-            src: url('//2ttf.com/webfont/UIswCwhB/webfont.ttf') format('truetype');
+            font-family: 'Showcard Gothic';
+    
         }
 
         /* Aplicar la fuente ShadowHand solo al h1 */
         header h1 {
-            font-family: 'ShadowHand', cursive;
+            font-family: 'Showcard Gothic';
         }
 
 
