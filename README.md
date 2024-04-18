@@ -100,11 +100,14 @@
             justify-content: center;
             margin-bottom: 40px;
         }
-        .profile img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            margin-right: 20px;
+     .profile img {
+    border-radius: 50%;
+    width: 300px; /* Ajusta el ancho de la imagen */
+    height: 300px; /* Ajusta la altura de la imagen */
+    margin-right: 20px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0)); /* Degradado de negro a transparente */
+}
+
         }
         .profile-text {
             max-width: 600px;
