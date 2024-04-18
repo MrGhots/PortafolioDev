@@ -100,7 +100,7 @@
             justify-content: center;
             margin-bottom: 40px;
         }
-    .profile img {
+.profile img {
     border-radius: 50%;
     width: 300px; /* Ajusta el ancho de la imagen */
     height: 300px; /* Ajusta la altura de la imagen */
