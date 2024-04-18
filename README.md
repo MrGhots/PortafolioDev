@@ -219,10 +219,48 @@
             margin: 0 10px;
             transition: color 0.3s ease;
         }
+
         .social-icons a:hover {
             color: #666;
         }
-        @media screen and (max-width: 768px) {
+        .profile img {
+    border-radius: 50%;
+    width: 300px; /* Ajusta el ancho de la imagen */
+    height: 300px; /* Ajusta la altura de la imagen */
+    margin-right: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative; /* Agrega posición relativa para los pseudoelementos */
+}
+
+.profile::before,
+.profile::after {
+    content: '';
+    width: 20px; /* Ancho del elemento decorativo */
+    height: 100%; /* Altura igual a la imagen */
+    background-color: #ffffff; /* Color del elemento decorativo */
+    position: absolute;
+    z-index: -1; /* Para que estén detrás de la imagen */
+}
+
+.profile::before {
+    left: -20px; /* Coloca el elemento decorativo a la izquierda */
+}
+
+.profile::after {
+    right: -20px; /* Coloca el elemento decorativo a la derecha */
+}
+
+.profile {
+    background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0)); /* Degradado de blanco a transparente */
+}
+
+        @media screen and (max-width: 768px) 
             section {
                 padding: 40px 20px; /* Reducir el padding horizontal para dar más espacio al contenido */
             }
