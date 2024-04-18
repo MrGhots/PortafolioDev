@@ -291,8 +291,8 @@
                /* Definir la fuente Showcard Gothic */
 /* Definir la fuente Showcard Gothic */
 @font-face {
-    font-family: 'Showcard Gothic';
-    src: url('fonts/showcardgothic.ttf') format('truetype');
+    font-family: '';
+    src: url('') format('truetype');
 }
 
 /* Aplicar la fuente Showcard Gothic solo al h1 */
