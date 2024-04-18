@@ -243,6 +243,9 @@
             section, .profile, .experience, .skills, .projects, .social-icons {
                 max-width: 100%; /* Ajustar el ancho máximo al 100% en dispositivos móviles */
             }
+               header h1 {
+            font-family: 'Shadow Hand', cursive;
+        }
         }
     </style>
 </head>
