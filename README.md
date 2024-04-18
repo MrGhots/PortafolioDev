@@ -1,18 +1,11 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Nicolás</title>
-    <link rel="stylesheet" href="styles1.css">
     <style>
-        /* Estilo para agrandar la letra */
-        body {
-            font-size: 20px; /* Puedes ajustar este valor según tus preferencias */
-            margin-top: -50px; /* Esto es opcional, para ajustar el contenido hacia arriba */
-        }
-
-        /* Animación */
+        /* CSS */
         @keyframes scale-up {
             to { scale: 1.5; }
         }
@@ -48,11 +41,6 @@
             display: grid;
             place-items: center;
         }
-
-        header h1 {
-    display: none;
-}
-
 
         h1 span:first-of-type {
             color: #09f;
@@ -113,6 +101,9 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1 id="repo-name">Nombre del Repositorio</h1>
+    </header>
     <main>
         <section>
             <div>
@@ -126,5 +117,12 @@
             <h3>Y todo con sólo CSS</h3>
         </section>
     </main>
+    <script>
+        // JavaScript para ocultar dinámicamente el nombre del repositorio
+        document.addEventListener("DOMContentLoaded", function() {
+            var repoName = document.getElementById("repo-name");
+            repoName.style.display = "none"; // Oculta el nombre del repositorio
+        });
+    </script>
 </body>
 </html>
