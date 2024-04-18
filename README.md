@@ -282,7 +282,7 @@ header h1 {
     <section id="sobre-mi" class="section-wrapper">
         <h2>Sobre Mí</h2>
         <div class="profile">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8StO7accc2lWJq2UDNN-EcrnHdDPBdP9PfQy6x_cl6PPR-lFaydAgMZCBguaH6OrCesg&usqp=CAU](https://media.discordapp.net/attachments/1198362548647514309/1230351297824292864/Background_Eraser.png?ex=663300f0&is=66208bf0&hm=203f8dd5c9841b043104b27c53ca54f69ad68a20bcbd1d2d2a8690da418b0e74&=&format=webp&quality=lossless&width=447&height=468" alt="Tu Foto">
+            <img src="https://media.discordapp.net/attachments/1198362548647514309/1230351297824292864/Background_Eraser.png?ex=663300f0&is=66208bf0&hm=203f8dd5c9841b043104b27c53ca54f69ad68a20bcbd1d2d2a8690da418b0e74&=&format=webp&quality=lossless&width=447&height=468" alt="Tu Foto">
             <div class="profile-text">
                 <p>¡Hola👋! Soy ,<strong>Nicolás</strong> joven un apasionado por la programación con años de experiencia en el desarrollo web. Me encanta crear proyectos innovadores y aprender nuevas tecnologías. Estoy comprometido a proporcionar soluciones de alta calidad y mejorar constantemente mis habilidades.</p>
             </div>
