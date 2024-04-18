@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -243,15 +243,17 @@
             section, .profile, .experience, .skills, .projects, .social-icons {
                 max-width: 100%; /* Ajustar el ancho máximo al 100% en dispositivos móviles */
             }
-               @font-face {
-            font-family: 'Showcard Gothic';
-    
-        }
+               /* Definir la fuente Showcard Gothic */
+@font-face {
+    font-family: 'Showcard Gothic';
+    src: local('Showcard Gothic'),  format('truetype');
+}
 
-        /* Aplicar la fuente ShadowHand solo al h1 */
-        header h1 {
-            font-family: 'Showcard Gothic';
-        }
+/* Aplicar la fuente Showcard Gothic solo al h1 */
+header h1 {
+    font-family: 'Showcard Gothic', sans-serif;
+}
+
 
 
     </style>
