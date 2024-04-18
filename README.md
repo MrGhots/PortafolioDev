@@ -243,14 +243,16 @@
 }
 
 .profile::before,
+
 .profile img::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 50%; /* Posiciona el degradado en la mitad vertical de la imagen */
     left: 0;
+    transform: translateY(-50%); /* Centra verticalmente el degradado */
     width: 100%;
     height: 50px; /* Altura del degradado */
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Degradado de blanco transparente a blanco opaco */
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0)); /* Degradado de blanco opaco a blanco transparente */
 }
 }
 
