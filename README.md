@@ -107,7 +107,6 @@
     margin-right: 20px;
     position: relative;
     overflow: hidden;
-}
 
         }
         .profile-text {
