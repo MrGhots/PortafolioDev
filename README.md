@@ -248,9 +248,10 @@
             src: url('//2ttf.com/webfont/UIswCwhB/webfont.ttf') format('truetype');
         }
 
-        /* Estilos adicionales */
-        body {
+        /* Aplicar la fuente ShadowHand solo al h1 */
+        header h1 {
             font-family: 'ShadowHand', cursive;
+        }
 
 
     </style>
