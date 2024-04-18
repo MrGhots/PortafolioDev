@@ -261,10 +261,10 @@
 }
 
         @media screen and (max-width: 768px) 
-            section {
+            .section {
                 padding: 40px 20px; /* Reducir el padding horizontal para dar más espacio al contenido */
-            }
-            .profile {
+             }
+             .profile {
                 flex-direction: column;
             }
             .profile img {
