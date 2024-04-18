@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -244,9 +244,10 @@
                 max-width: 100%; /* Ajustar el ancho máximo al 100% en dispositivos móviles */
             }
                /* Definir la fuente Showcard Gothic */
+/* Definir la fuente Showcard Gothic */
 @font-face {
     font-family: 'Showcard Gothic';
-    src: local('Showcard Gothic'),  format('truetype');
+    src: url('fonts/showcardgothic.ttf') format('truetype');
 }
 
 /* Aplicar la fuente Showcard Gothic solo al h1 */
