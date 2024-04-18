@@ -100,12 +100,13 @@
             justify-content: center;
             margin-bottom: 40px;
         }
-     .profile img {
+    .profile img {
     border-radius: 50%;
     width: 300px; /* Ajusta el ancho de la imagen */
     height: 300px; /* Ajusta la altura de la imagen */
     margin-right: 20px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0)); /* Degradado de negro a transparente */
+    position: relative;
+    overflow: hidden;
 }
 
         }
@@ -242,13 +243,15 @@
 }
 
 .profile::before,
-.profile::after {
-    content: '';
-    width: 20px; /* Ancho del elemento decorativo */
-    height: 100%; /* Altura igual a la imagen */
-    background-color: #ffffff; /* Color del elemento decorativo */
+.profile img::after {
+    content: "";
     position: absolute;
-    z-index: -1; /* Para que estén detrás de la imagen */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del degradado */
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Degradado de blanco transparente a blanco opaco */
+}
 }
 
 .profile::before {
