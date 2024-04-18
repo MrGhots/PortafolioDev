@@ -92,6 +92,7 @@
         }
         #sobre-mi {
             text-align: center; /* Centrar el contenido horizontalmente */
+             font-family: Arial, sans-serif; /* Utiliza la tipografía Arial */
             margin-top: 40px; /* Agregar un margen superior para separarla del contenido anterior */
         }
         .profile {
@@ -241,7 +242,6 @@
     position: relative; /* Agrega posición relativa para los pseudoelementos */
 }
 
-.profile::before,
 
 .profile img::after {
     content: "";
@@ -290,8 +290,8 @@
             }
                /* Definir la fuente Showcard Gothic */
 /* Definir la fuente Showcard Gothic */
-@font-face {
-    font-family: '';
+@font-face 
+    font-family: font-family: Arial, sans-serif;
     src: url('') format('truetype');
 }
 
