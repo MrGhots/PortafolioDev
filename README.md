@@ -275,6 +275,10 @@
                 flex-direction: column;
             }
             .profile img {
+                mask-image: linear-gradient(
+                white 80%
+                trasparent
+                )
                 width: 150px; /* Ajustar el tamaño de la imagen según sea necesario */
                 margin-right: 0;
                 margin-bottom: 10px; /* Reducir el margen inferior */
