@@ -257,7 +257,7 @@
     </div>
 
     <header>
-        <h1>Nicolás Torres Molina</h1>
+        <h1 style="font-family: ShadowHand;">Nicolás Torres Molina</h1>
     </header>
     <nav>
         <a href="#sobre-mi">Sobre Mí</a>
