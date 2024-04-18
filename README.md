@@ -49,6 +49,11 @@
             place-items: center;
         }
 
+        header h1 {
+    display: none;
+}
+
+
         h1 span:first-of-type {
             color: #09f;
             font-size: 0.35em;
