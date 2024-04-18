@@ -297,7 +297,7 @@
 
 /* Aplicar la fuente Showcard Gothic solo al h1 */
 header h1 {
-    font-family: 'Showcard Gothic', sans-serif;
+    font-family: 'font-family: Arial, sans-serif', sans-serif;
 }
 
 
