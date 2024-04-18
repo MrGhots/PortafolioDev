@@ -315,7 +315,7 @@ header h1 {
     </div>
 
     <header>
-        <h1>Nicolás Torres Molina</h1>
+    <b> <h1><b>Nicolás Torres Molina</b></h1>
     </header>
     <nav>
         <a href="#sobre-mi">Sobre Mí</a>
