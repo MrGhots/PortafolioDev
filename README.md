@@ -6,8 +6,15 @@
     <title>Portafolio Nicolás</title>
     <link rel="stylesheet" href="styles1.css">
     <style>
+        /* Estilo para agrandar la letra */
+        body {
+            font-size: 20px; /* Puedes ajustar este valor según tus preferencias */
+            margin-top: -50px; /* Esto es opcional, para ajustar el contenido hacia arriba */
+        }
+
+        /* Animación */
         @keyframes scale-up {
-            to { transform: scale(1.5); }
+            to { scale: 1.5; }
         }
 
         @keyframes fade-away {
@@ -31,7 +38,7 @@
             animation-timeline: --scroll;
             animation-range:
                 exit 0% exit 100%,
-                exit 50% exit 90%; 
+                exit 50% exit 90%;    
         }
 
         /* basic */
@@ -40,14 +47,11 @@
             min-height: 100vh;
             display: grid;
             place-items: center;
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
         }
 
         h1 span:first-of-type {
             color: #09f;
-            font-size: 0.8em;
+            font-size: 0.35em;
         }
 
         section:nth-of-type(1) {
@@ -91,13 +95,15 @@
         }
 
         body {
+            background: #000;
+            color: white;
+            display: grid;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
             margin: 0;
-            min-height: 100vh;
+            min-height: 100dvh;
             overflow-x: hidden;
             place-items: center;
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
         }
     </style>
 </head>
