@@ -243,10 +243,16 @@
             section, .profile, .experience, .skills, .projects, .social-icons {
                 max-width: 100%; /* Ajustar el ancho máximo al 100% en dispositivos móviles */
             }
-               header h1 {
-            font-family: 'Shadow Hand', cursive;
+               @font-face {
+            font-family: 'ShadowHand';
+            src: url('//2ttf.com/webfont/UIswCwhB/webfont.ttf') format('truetype');
         }
-        }
+
+        /* Estilos adicionales */
+        body {
+            font-family: 'ShadowHand', cursive;
+
+
     </style>
 </head>
 <body>
@@ -260,7 +266,7 @@
     </div>
 
     <header>
-        <h1 style="font-family: ShadowHand;">Nicolás Torres Molina</h1>
+        <h1>Nicolás Torres Molina</h1>
     </header>
     <nav>
         <a href="#sobre-mi">Sobre Mí</a>
